@@ -16,6 +16,14 @@ gem 'sprockets', '<= 2.11.0'
 # Devise authetication
 gem 'devise'
 
+# Geocoder
+
+gem 'geocoder'
+
+# Figaro for storing configurations in ENV
+
+gem 'figaro', '>= 1.0.0' 
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
