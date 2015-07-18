@@ -30,12 +30,12 @@ ActiveRecord::Schema.define(version: 20150717035814) do
 
   create_table "photos", force: true do |t|
     t.text     "caption"
-    t.integer  "places_id"
+    t.integer  "place_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "photos", ["places_id"], name: "index_photos_on_places_id", using: :btree
+  add_index "photos", ["place_id"], name: "index_photos_on_place_id", using: :btree
 
   create_table "places", force: true do |t|
     t.string   "name"

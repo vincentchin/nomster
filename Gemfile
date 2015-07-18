@@ -16,6 +16,9 @@ gem 'sprockets', '<= 2.11.0'
 # Devise authetication
 gem 'devise'
 
+# CarrierWave
+gem 'carrierwave'
+
 # Geocoder
 
 gem 'geocoder'

@@ -3,9 +3,9 @@ class CreatePhotos < ActiveRecord::Migration
     create_table :photos do |t|
       t.text :caption
 
-      t.integer	:places_id
+      t.integer	:place_id
       t.timestamps
     end
-    add_index :photos, :places_id
+    add_index :photos, :place_id
   end
 end

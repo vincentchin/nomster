@@ -3,6 +3,13 @@
 <i><%= @place.address %></i>
 <br /><br />
 <p><%= @place.description %></p>
+
+<br />
+
+<% @place.photos.each do |photo| %>
+<%= photo.caption %>
+<% end %>
+
 <% if @place.latitude.present? && @place.longitude.present? %>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <script>
@@ -88,8 +95,12 @@
   </div>
 <% end %>
 
+<div class="clear"></div>
 
-
+<%= simple_form_for @photo, :url => place_photos_path(@place) do |f| %>
+  <%= f.input :caption %>
+  <%= f.submit "Upload photo", :class => 'btn btn-primary' %>
+<% end %>
 
 
 
