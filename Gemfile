@@ -19,6 +19,9 @@ gem 'devise'
 # CarrierWave
 gem 'carrierwave'
 
+# Fog
+gem 'fog', '~> 1.3.1'
+
 # Geocoder
 
 gem 'geocoder'

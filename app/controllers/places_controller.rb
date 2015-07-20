@@ -3,6 +3,7 @@ before_action :authenticate_user!, :only => [:new, :create, :edit, :update, :des
 
 	def index
 		@places = Place.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
+
 	end
 
 	def new
