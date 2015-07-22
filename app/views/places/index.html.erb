@@ -46,13 +46,17 @@
 		<i><%= place.address %></i><br /><br />
 		<p><%= place.description %></p><br />
 
-	<div class="col-xs-12">
+	
     <% if place.photos.last.present? %> 
-    <%= image_tag place.photos.last.picture, :class => 'img-responsive' %>
+    <div class="col-xs-4">
+    <%= image_tag place.photos.last.picture, :class => 'img-responsive picture-height' %>
+    </div>
     <% end %>
-	</div>
+	
+  <div class="clear"></div>
 
 	<% if place.user.present? %>
+    <br />
 	  <small><%= place.user.email %></small>
 	<% end %>
 	</div>
