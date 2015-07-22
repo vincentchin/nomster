@@ -32,12 +32,17 @@
   <div id="map-canvas" class="col-xs-12 "></div>
   <% end %>
   <br />
-  <div class="col-xs-5">
-  <% @place.photos.each do |photo| %>
-    <%= image_tag photo.picture, :class => 'img-responsive center-block'%>
-    <br />
-    <h4 class="pull-left"><%= photo.caption %></h4>
-  <% end %>
+  <div class="row">
+    
+    <% @place.photos.each do |photo| %>
+    <div class="col-xs-4">
+      <%= image_tag photo.picture, :class => 'img-responsive picture-height'%>
+      <br />
+      <h4 class="text-center"><%= photo.caption %></h4>
+      <br />
+    </div>  
+    <% end %>
+    
   </div>
   <div class="clear"></div>
   <div class="pull-right">
