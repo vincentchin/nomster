@@ -41,6 +41,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'simple_form'
 # Pagination
 
+gem 'factory_girl_rails', '~> 4.0'
+
 gem 'will_paginate', '~> 3.0.6'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
