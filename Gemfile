@@ -62,6 +62,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :test do
+  gem 'mocha'
+end
+group :development do
+  gem 'pry-rails'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
