@@ -21,7 +21,7 @@ end
 Geocoder.configure(:lookup => :test)
 
 Geocoder::Lookup::Test.add_stub(
-  "6903 3rd Avenue, Brooklyn, NY 11209", [
+  '6903 3rd Avenue, Brooklyn, NY 11209', [
     {
       'latitude'     => 40.635475158691406,
       'longitude'    => -74.02588653564453,
