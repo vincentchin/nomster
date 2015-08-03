@@ -87,8 +87,11 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaclass (0.0.4)
     mime-types (1.25.1)
     minitest (4.7.5)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
     multi_json (1.11.2)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
@@ -168,6 +171,7 @@ DEPENDENCIES
   geocoder
   jbuilder (~> 1.2)
   jquery-rails
+  mocha
   pg
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)
